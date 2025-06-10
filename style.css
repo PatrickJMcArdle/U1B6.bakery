@@ -36,7 +36,7 @@ nav {
 nav a:link {
     font-size: 1.8vh;
     text-decoration: none;
-    color:black;
+    color:rgb(0, 0, 0);
     padding: 0.4em 0.6em;
 }
 
