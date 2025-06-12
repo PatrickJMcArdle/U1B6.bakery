@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 253, 230);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 5px solid;
+    padding: 1.5vh 2vw;
+    flex-shrink: 0;
+}
+
+.brand {
+    color: rgb(207, 111, 236);
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 1.5vw;
+}
+
+nav a:link {
+    font-size: 2vh;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    padding: 0.4em 0.6em;
+}
+
+nav a:hover {
+    background-color: rgb(245, 243, 224);
+    border-radius: 0.25em;
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+    height:calc(100vh - 10vh);
+    border: 2px solid;
+    margin: 1vh 1vw;
+    gap: 2vh;
+    padding: 2vh 2vw;
+    overflow: hidden;
+}
+
+aside {
+    width: 15vw;
+    min-width: 120px;
+    background-color: rgb(255, 225, 248);
+    font-size: 1.8vh;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1vh;
+}
+
+aside li {
+    padding: 0.75em;
+    border-right: 4px solid rgba(0, 0, 0, 0.205);
+    font-size: 1.8vh;
+}
+
+aside li:hover {
+    border-right: 4px solid black;
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2vh;
+    overflow-y: auto;
+    padding: 1vh 1vw;
+}
+
+h1 {
+    font-size: 4vh;
+    font-weight: 800;
+}
+
+div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+p:not(.brand) {
+
+    line-height: 1.5;
+    font-size: 2.2vh;
+}
+
+.testimonial {
+    background-color: rgb(233, 230, 193);
+    padding: 1.5vh 1vw;
+    border-left: 4px solid black;
+    font-size: 2vh;
+    font-style: italic;
+}
+
+footer {
+    color: rgb(255, 253, 230);
+    background-color: black;
+    text-align: center;
+    padding: 1.5vh;
+    font-size: 1.8vh;
+    flex-shrink: 0;
+}
+
+/* @media (width < 600px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+@media (width >= 600px) {
+    body {
+        background-color: aquamarine;
+    }
+} */
